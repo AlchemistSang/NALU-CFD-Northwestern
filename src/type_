@@ -1,0 +1,130 @@
+AssembleNCContinuityBFDarcyElemSolverAlgorithm.C:82:  rho0_ = matData->primary_;
+AssembleNCContinuityBFDarcyElemSolverAlgorithm.C:83:  rho1_ = matData->secondary_;
+AssembleNCContinuityBFElemSolverAlgorithm.C:81:  rho0_ = matData->primary_;
+AssembleNCContinuityBFElemSolverAlgorithm.C:82:  rho1_ = matData->secondary_;
+ComputeNCMdotBFDarcyElemAlgorithm.C:82:  rho0_ = matData->primary_;
+ComputeNCMdotBFDarcyElemAlgorithm.C:83:  rho1_ = matData->secondary_;
+ComputeNCMdotBFElemAlgorithm.C:81:  rho0_ = matData->primary_;
+ComputeNCMdotBFElemAlgorithm.C:82:  rho1_ = matData->secondary_;
+LSReinitEquationSystem.C:1719:  double rho0 = matData->primary_;
+LSReinitEquationSystem.C:1720:  double rho1 = matData->secondary_;
+MaterialPropertys.C:152:          matData->type_ = CONSTANT_MAT;
+MaterialPropertys.C:159:            matData->constValue_ = theValue;
+MaterialPropertys.C:178:                    matData->cpConstMap_[speciesName] = theValue;
+MaterialPropertys.C:189:                    matData->hfConstMap_[speciesName] = theValue;
+MaterialPropertys.C:193:                    matData->hfConstMap_[speciesName] = 0.0;
+MaterialPropertys.C:208:          matData->type_ = MIXFRAC_MAT;
+MaterialPropertys.C:209:          matData->primary_ = primaryVal;
+MaterialPropertys.C:210:          matData->secondary_ = secondaryVal;
+MaterialPropertys.C:217:          matData->type_ = POLYNOMIAL_MAT;
+MaterialPropertys.C:235:                matData->polynomialCoeffsMap_[speciesName] = tmpPolyCoeffs;
+MaterialPropertys.C:246:                matData->lowPolynomialCoeffsMap_[speciesName] = tmpPolyCoeffs;
+MaterialPropertys.C:257:                matData->highPolynomialCoeffsMap_[speciesName] = tmpPolyCoeffs;
+MaterialPropertys.C:268:          matData->type_ = IDEAL_GAS_T_MAT;
+MaterialPropertys.C:273:            matData->type_ = IDEAL_GAS_T_P_MAT;
+MaterialPropertys.C:278:            matData->type_ = IDEAL_GAS_YK_MAT;
+MaterialPropertys.C:283:                  matData->type_ = GEOMETRIC_MAT;
+MaterialPropertys.C:288:	  matData->type_ = HDF5_TABLE_MAT;
+MaterialPropertys.C:298:	    matData->indVarName_.resize(1);
+MaterialPropertys.C:299:	    names >> matData->indVarName_[0];
+MaterialPropertys.C:302:	    matData->indVarName_.resize(names.size());
+MaterialPropertys.C:304:	      names[i] >> matData->indVarName_[i];
+MaterialPropertys.C:311:	    matData->indVarTableName_.resize(1);
+MaterialPropertys.C:312:	    tableNames >> matData->indVarTableName_[0];
+MaterialPropertys.C:315:	    matData->indVarTableName_.resize(names.size());
+MaterialPropertys.C:317:	      tableNames[i] >> matData->indVarTableName_[i];
+MaterialPropertys.C:327:          matData->auxVarName_ = auxVarName;
+MaterialPropertys.C:328:          matData->tablePropName_ = tablePropName;
+MaterialPropertys.C:329:          matData->tableAuxVarName_ = tableAuxVarName;
+MaterialPropertys.C:332:          matData->type_ = GENERIC;
+MaterialPropertys.C:333:          get_required(y_spec, "generic_property_evaluator_name", matData->genericPropertyEvaluatorName_);
+MaterialPropertys.C:341:          matData->type_ = HEAVISIDE_MAT;
+MaterialPropertys.C:342:          matData->primary_ = primaryVal;
+MaterialPropertys.C:343:          matData->secondary_ = secondaryVal;
+MaterialPropertys.C:356:          matData->type_ = LINEAR_MAT;
+MaterialPropertys.C:357:          matData->refVal_ = refVal;
+MaterialPropertys.C:358:          matData->slope_ = slope;
+MaterialPropertys.C:359:          matData->val0_ = val0;
+MaterialPropertys.C:373:          matData->type_ = LINEAR_TEMP_SOLID_MAT;
+MaterialPropertys.C:374:          matData->refVal_ = refVal;
+MaterialPropertys.C:375:          matData->slope_ = slope;
+MaterialPropertys.C:376:          matData->val0_ = val0;
+MaterialPropertys.C:391:          matData->type_ = THREE_PHASE_MAT;
+MaterialPropertys.C:392:          matData->primary_ = primaryVal;
+MaterialPropertys.C:393:          matData->secondary_ = secondaryVal;
+MaterialPropertys.C:394:          matData->tertiary_ = tertiaryVal;
+MaterialPropertys.C:409:        matData->type_ = MULTI_MIXTURE_MAT;
+MaterialPropertys.C:410:        matData->primary_ = primaryVal;
+MaterialPropertys.C:411:        matData->secondary_ = secondaryVal;
+MaterialPropertys.C:412:        matData->caseNumber_ = case_Number;
+MaterialPropertys.C:435:          matData->type_ = POWDER_BED;
+MaterialPropertys.C:436:          matData->powderProp_ = powder;
+MaterialPropertys.C:437:          matData->liquidProp_ = liquid;
+MaterialPropertys.C:438:          matData->solidProp_ = solid;
+MaterialPropertys.C:439:          matData->powder_slope_ = powder_slope;
+MaterialPropertys.C:440:          matData->liquid_slope_ = liquid_slope;
+MaterialPropertys.C:441:          matData->solid_slope_ = solid_slope;
+MaterialPropertys.C:463:          matData->type_ = LATENT_MAT;
+MaterialPropertys.C:464:          matData->liquidus_ = liquidusVal;
+MaterialPropertys.C:465:          matData->solidus_ = solidusVal;
+MaterialPropertys.C:466:          matData->latent_ = latentVal;
+MaterialPropertys.C:467:          matData->refVal_ = refVal;
+NonConsLowMachEquationSystem.C:1377:	  double rho0 = matData->primary_;
+NonConsLowMachEquationSystem.C:1378:	  double rho1 = matData->secondary_;
+NonConsLowMachEquationSystem.C:1383:	  double rho0 = matData->primary_;
+NonConsLowMachEquationSystem.C:1384:	  double rho1 = matData->secondary_;
+Realm.C:1044:      switch( matData->type_) {
+Realm.C:1060:            if ( matData->cpConstMap_.size() > 0.0 ) {
+Realm.C:1067:                    matData->cpConstMap_, *metaData_);
+Realm.C:1069:                    matData->cpConstMap_, matData->hfConstMap_, *metaData_, tRef);
+Realm.C:1080:              double specificHeatValue = matData->constValue_;
+Realm.C:1090:              userConstData[0] = matData->constValue_;
+Realm.C:1111:            userConstData[0] = matData->constValue_;
+Realm.C:1129:          const double propPrim = matData->primary_;
+Realm.C:1130:          const double propSec = matData->secondary_;
+Realm.C:1155:          const double propPrim = matData->primary_;
+Realm.C:1156:          const double propSec = matData->secondary_;
+Realm.C:1170:          const double val0 = matData->val0_;
+Realm.C:1171:          const double slope = matData->slope_;
+Realm.C:1172:          const double ref = matData->refVal_;
+Realm.C:1190:          const double propPrim = matData->primary_;
+Realm.C:1191:          const double propSec = matData->secondary_;
+Realm.C:1192:          const double propTert = matData->tertiary_;
+Realm.C:1209:            const double propPrim = matData->primary_;
+Realm.C:1210:            const double propSec = matData->secondary_;
+Realm.C:1211:            const int case_number = matData->caseNumber_;
+Realm.C:1233:          const double propPowder = matData->powderProp_;
+Realm.C:1234:          const double propLiquid = matData->liquidProp_;
+Realm.C:1235:          const double propSolid = matData->solidProp_;
+Realm.C:1236:          const double powderSlope = matData->powder_slope_;
+Realm.C:1237:          const double liquidSlope = matData->liquid_slope_;
+Realm.C:1238:          const double solidSlope = matData->solid_slope_;
+Realm.C:1260:          const double val0 = matData->val0_;
+Realm.C:1261:          const double slope = matData->slope_;
+Realm.C:1262:          const double ref = matData->refVal_;
+Realm.C:1276:          const double liquidus = matData->liquidus_;
+Realm.C:1277:          const double solidus = matData->solidus_;
+Realm.C:1278:          const double latent = matData->latent_;
+Realm.C:1279:          const double refVal = matData->refVal_;
+Realm.C:1310:                    matData->polynomialCoeffsMap_, *metaData_, tRef);
+Realm.C:1322:                    materialPropertys_.referencePropertyDataMap_, matData->polynomialCoeffsMap_ );
+Realm.C:1327:                    matData->polynomialCoeffsMap_, *metaData_);
+Realm.C:1359:                    materialPropertys_.referencePropertyDataMap_, matData->lowPolynomialCoeffsMap_,
+Realm.C:1360:                    matData->highPolynomialCoeffsMap_, universalR);
+Realm.C:1362:                    materialPropertys_.referencePropertyDataMap_, matData->lowPolynomialCoeffsMap_,
+Realm.C:1363:                    matData->highPolynomialCoeffsMap_, universalR);
+Realm.C:1368:                    materialPropertys_.referencePropertyDataMap_, matData->lowPolynomialCoeffsMap_,
+Realm.C:1369:                    matData->highPolynomialCoeffsMap_, universalR, *metaData_);
+Realm.C:1371:                   materialPropertys_.referencePropertyDataMap_, matData->lowPolynomialCoeffsMap_,
+Realm.C:1372:                   matData->highPolynomialCoeffsMap_, universalR, *metaData_);
+Realm.C:1413:              if ( IDEAL_GAS_T_MAT == matData->type_ ) {
+Realm.C:1431:              if ( IDEAL_GAS_T_MAT == matData->type_ ) {
+Realm.C:1515:								       matData->tablePropName_, 
+Realm.C:1516:								       matData->indVarName_, 
+Realm.C:1517:								       matData->indVarTableName_,
+Realm.C:1521:	  NaluEnv::self().naluOutputP0() << "With " << matData->tablePropName_ << " also read table for auxVarName " <<matData->auxVarName_  << std::endl;
+Realm.C:1526:          std::string auxVarName = matData->auxVarName_;
+Realm.C:1536:									 matData->tableAuxVarName_, 
+Realm.C:1537:									 matData->indVarName_, 
+Realm.C:1538:									 matData->indVarTableName_,
+Realm.C:1552:          std::string propEvalName = matData->genericPropertyEvaluatorName_;
